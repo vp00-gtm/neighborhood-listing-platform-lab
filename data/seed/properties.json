@@ -1,0 +1,146 @@
+{
+  "properties": [
+    {
+      "property_id": "maple-court-apartment",
+      "title": "Maple Court Apartment",
+      "address": {
+        "street": "120 Example Maple Lane",
+        "city": "Maplehaven",
+        "state": "ZZ"
+      },
+      "price": 1850,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "square_feet": 940,
+      "amenities": ["dishwasher", "off-street-parking", "shared-garden"],
+      "zip_code": "00001",
+      "local_sponsors": [
+        {
+          "sponsor_id": "clover-key-home-repair",
+          "business_name": "Clover Key Home Repair",
+          "website_url": "https://example.com/clover-key",
+          "business_category": "home-services"
+        },
+        {
+          "sponsor_id": "moonbeam-garden-coop",
+          "business_name": "Moonbeam Garden Co-op",
+          "website_url": "https://example.com/moonbeam-garden",
+          "business_category": "community-services"
+        }
+      ],
+      "image_path": "/images/maple-court.svg",
+      "image_alt": "Original illustration of a terracotta apartment building with blue windows and a tree beside the entrance.",
+      "source_note": "Fictional course scenario created for this project; not sourced from a real listing."
+    },
+    {
+      "property_id": "cedar-window-studio",
+      "title": "Cedar Window Studio",
+      "address": {
+        "street": "24 Example Cedar Walk",
+        "city": "Cedarbrook Heights",
+        "state": "ZZ"
+      },
+      "price": 1250,
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "square_feet": 510,
+      "amenities": ["bike-storage", "in-unit-laundry", "pet-friendly"],
+      "zip_code": "00002",
+      "local_sponsors": [
+        {
+          "sponsor_id": "moonbeam-garden-coop",
+          "business_name": "Moonbeam Garden Co-op",
+          "website_url": "https://example.com/moonbeam-garden",
+          "business_category": "community-services"
+        }
+      ],
+      "image_path": "/images/cedar-studio.svg",
+      "image_alt": "Original illustration of a cream studio building with a wide blue window, a green door, and two planters.",
+      "source_note": "Fictional course scenario created for this project; not sourced from a real listing."
+    },
+    {
+      "property_id": "willow-porch-house",
+      "title": "Willow Porch House",
+      "address": {
+        "street": "86 Example Willow Way",
+        "city": "Maplehaven",
+        "state": "ZZ"
+      },
+      "price": 2600,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "square_feet": 1560,
+      "amenities": ["balcony", "off-street-parking", "pet-friendly"],
+      "zip_code": "00003",
+      "local_sponsors": [
+        {
+          "sponsor_id": "clover-key-home-repair",
+          "business_name": "Clover Key Home Repair",
+          "website_url": "https://example.com/clover-key",
+          "business_category": "home-services"
+        }
+      ],
+      "image_path": "/images/willow-house.svg",
+      "image_alt": "Original illustration of a blue house with a dark pitched roof, a front porch, and a yellow door.",
+      "source_note": "Fictional course scenario created for this project; not sourced from a real listing."
+    },
+    {
+      "property_id": "aspen-alcove-flat",
+      "title": "Aspen Alcove Flat",
+      "address": {
+        "street": "7 Example Aspen Crescent",
+        "city": "Pineglass",
+        "state": "ZZ"
+      },
+      "price": 1675,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "square_feet": 720,
+      "amenities": ["air-conditioning", "in-unit-laundry"],
+      "zip_code": "00004",
+      "local_sponsors": [
+        {
+          "sponsor_id": "harborlight-community-kitchen",
+          "business_name": "Harborlight Community Kitchen",
+          "website_url": "https://example.com/harborlight-kitchen",
+          "business_category": "food-and-drink"
+        }
+      ],
+      "image_path": "/images/cedar-studio.svg",
+      "image_alt": "Original illustration used as a fictional listing illustration; it does not depict a real property.",
+      "source_note": "Fictional course scenario created for this project; not sourced from a real listing."
+    },
+    {
+      "property_id": "juniper-yard-home",
+      "title": "Juniper Yard Home",
+      "address": {
+        "street": "53 Example Juniper Mews",
+        "city": "Pineglass",
+        "state": "ZZ"
+      },
+      "price": 2100,
+      "bedrooms": 2,
+      "bathrooms": 1.5,
+      "square_feet": 1120,
+      "amenities": ["balcony", "dishwasher", "shared-garden"],
+      "zip_code": "00005",
+      "local_sponsors": [
+        {
+          "sponsor_id": "harborlight-community-kitchen",
+          "business_name": "Harborlight Community Kitchen",
+          "website_url": "https://example.com/harborlight-kitchen",
+          "business_category": "food-and-drink"
+        },
+        {
+          "sponsor_id": "moonbeam-garden-coop",
+          "business_name": "Moonbeam Garden Co-op",
+          "website_url": "https://example.com/moonbeam-garden",
+          "business_category": "community-services"
+        }
+      ],
+      "image_path": "/images/willow-house.svg",
+      "image_alt": "Original illustration used as a fictional listing illustration; it does not depict a real property.",
+      "source_note": "Fictional course scenario created for this project; not sourced from a real listing."
+    }
+  ]
+}

@@ -1,7 +1,6 @@
 import PropertyExplorer from "@/components/PropertyExplorer";
 import { properties } from "@/data/properties";
 import SponsorBanner from "@/components/SponsorBanner";
-import type { Sponsor } from "@/types";
 
 const features = [
   {
@@ -21,13 +20,11 @@ const features = [
   },
 ];
 
-const sponsor: Sponsor = {
-  id: "example-neighborhood-services",
-  businessName: "Example Neighborhood Services (Fictional Demo)",
-  websiteUrl: "https://example.com",
-};
-
 export default function Home() {
+  const featuredSponsor = properties.flatMap(
+    (property) => property.local_sponsors,
+  )[0];
+
   return (
     <main className="min-h-screen bg-zinc-50 px-6 py-16 text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50 sm:px-10 sm:py-24">
       <div className="mx-auto w-full max-w-5xl">
@@ -61,9 +58,11 @@ export default function Home() {
           ))}
         </section>
 
-        <div className="mt-12 max-w-2xl">
-          <SponsorBanner sponsor={sponsor} />
-        </div>
+        {featuredSponsor && (
+          <div className="mt-12 max-w-2xl">
+            <SponsorBanner sponsor={featuredSponsor} />
+          </div>
+        )}
 
         <section aria-labelledby="listings-heading" className="mt-16">
           <h2 id="listings-heading" className="text-3xl font-semibold tracking-tight">

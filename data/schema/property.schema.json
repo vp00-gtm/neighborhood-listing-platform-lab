@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Synthetic neighborhood property collection",
+  "description": "A strict batch of one to five property records. Prices are monthly USD amounts.",
+  "type": "object",
+  "properties": {
+    "properties": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": {
+        "$ref": "#/$defs/property"
+      }
+    }
+  },
+  "required": ["properties"],
+  "additionalProperties": false,
+  "$defs": {
+    "property": {
+      "title": "Property",
+      "type": "object",
+      "properties": {
+        "property_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "address": {
+          "type": "object",
+          "properties": {
+            "street": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "city": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "state": {
+              "type": "string",
+              "pattern": "^[A-Z]{2}$"
+            }
+          },
+          "required": ["street", "city", "state"],
+          "additionalProperties": false
+        },
+        "price": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Monthly price in USD."
+        },
+        "bedrooms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bathrooms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "square_feet": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "amenities": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "air-conditioning",
+              "balcony",
+              "bike-storage",
+              "dishwasher",
+              "in-unit-laundry",
+              "off-street-parking",
+              "pet-friendly",
+              "shared-garden"
+            ]
+          },
+          "description": "A list of zero or more controlled amenity identifiers."
+        },
+        "zip_code": {
+          "type": "string",
+          "pattern": "^\\d{5}$"
+        },
+        "local_sponsors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sponsor"
+          }
+        },
+        "image_path": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^/images/[a-z0-9-]+\\.svg$"
+        },
+        "image_alt": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "source_note": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "property_id",
+        "title",
+        "address",
+        "price",
+        "bedrooms",
+        "bathrooms",
+        "square_feet",
+        "amenities",
+        "zip_code",
+        "local_sponsors",
+        "image_path",
+        "image_alt",
+        "source_note"
+      ],
+      "additionalProperties": false
+    },
+    "sponsor": {
+      "title": "Sponsor",
+      "type": "object",
+      "properties": {
+        "sponsor_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "business_name": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "website_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "business_category": {
+          "type": "string",
+          "enum": [
+            "community-services",
+            "food-and-drink",
+            "home-services"
+          ]
+        }
+      },
+      "required": [
+        "sponsor_id",
+        "business_name",
+        "website_url",
+        "business_category"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

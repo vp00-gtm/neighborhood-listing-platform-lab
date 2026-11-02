@@ -1,0 +1,30 @@
+{
+  "properties": [
+    {
+      "property_id": "sample-lantern-cottage",
+      "title": "Lantern Cottage",
+      "address": {
+        "street": "19 Example Lantern Row",
+        "city": "Pineglass",
+        "state": "ZZ"
+      },
+      "price": 1940,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "square_feet": 880,
+      "amenities": ["dishwasher", "shared-garden"],
+      "zip_code": "00006",
+      "local_sponsors": [
+        {
+          "sponsor_id": "moonbeam-garden-coop",
+          "business_name": "Moonbeam Garden Co-op",
+          "website_url": "https://example.com/moonbeam-garden",
+          "business_category": "community-services"
+        }
+      ],
+      "image_path": "/images/maple-court.svg",
+      "image_alt": "Original illustration used as a fictional listing illustration; it does not depict a real property.",
+      "source_note": "Fictional sample response created for this project; not sourced from a real listing."
+    }
+  ]
+}

@@ -10,15 +10,15 @@ export default function SponsorBanner({ sponsor }: SponsorBannerProps) {
         Sponsored
       </p>
       <h2 className="mt-2 text-xl font-semibold tracking-tight">
-        {sponsor.businessName}
+        {sponsor.business_name}
       </h2>
       <a
-        href={sponsor.websiteUrl}
+        href={sponsor.website_url}
         target="_blank"
         rel="noopener noreferrer"
         className="mt-3 inline-block font-semibold text-emerald-800 underline underline-offset-4 hover:text-emerald-900 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 dark:text-emerald-300 dark:hover:text-emerald-200 dark:focus-visible:outline-emerald-300"
       >
-        Visit {sponsor.businessName}&apos;s website.
+        Visit {sponsor.business_name}&apos;s website.
       </a>
     </aside>
   );
