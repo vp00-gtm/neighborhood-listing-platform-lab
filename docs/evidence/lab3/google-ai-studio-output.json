@@ -1,0 +1,160 @@
+[
+  {
+    "properties": [
+      {
+        "property_id": "PROP-101",
+        "property_name": "Maple Court Residence",
+        "address": {
+          "street": "100 Maple Way",
+          "city": "Northwood",
+          "state": "ZZ",
+          "zip_code": "01234"
+        },
+        "price": 2200,
+        "bedrooms": 2,
+        "bathrooms": 1.5,
+        "square_feet": 1100,
+        "amenities": [
+          "Hardwood Floors",
+          "Central AC",
+          "Dishwasher"
+        ],
+        "local_sponsors": [
+          {
+            "sponsor_id": "SPON-01",
+            "name": "Northwood Mortgage Group",
+            "business_category": "Mortgage Services",
+            "sponsor_url": "https://example.com/northwood-mortgage"
+          }
+        ],
+        "source_note": "This listing is a fictional scenario and was not sourced from a real listing.",
+        "illustration_path": "/images/maple-court.svg",
+        "illustration_description": "An architectural illustration of Maple Court Residence, depicted as a digital drawing rather than a photograph."
+      },
+      {
+        "property_id": "PROP-102",
+        "property_name": "Cedar Studio Loft",
+        "address": {
+          "street": "200 Cedar Boulevard",
+          "city": "Westend",
+          "state": "ZZ",
+          "zip_code": "56789"
+        },
+        "price": 1650,
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "square_feet": 750,
+        "amenities": [
+          "Hardwood Floors",
+          "In-Unit Laundry"
+        ],
+        "local_sponsors": [
+          {
+            "sponsor_id": "SPON-02",
+            "name": "Westend Interior Styling",
+            "business_category": "Interior Design",
+            "sponsor_url": "https://example.com/westend-interiors"
+          }
+        ],
+        "source_note": "This listing is a fictional scenario and was not sourced from a real listing.",
+        "illustration_path": "/images/cedar-studio.svg",
+        "illustration_description": "An illustration showing the Cedar Studio Loft layout, presented as a graphic drawing and not a real photograph."
+      },
+      {
+        "property_id": "PROP-103",
+        "property_name": "Willow House Manor",
+        "address": {
+          "street": "300 Willow Lane",
+          "city": "Eastside",
+          "state": "ZZ",
+          "zip_code": "13579"
+        },
+        "price": 3100,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "square_feet": 2400,
+        "amenities": [
+          "Central AC",
+          "Dishwasher",
+          "Balcony"
+        ],
+        "local_sponsors": [
+          {
+            "sponsor_id": "SPON-03",
+            "name": "Eastside Legal Partners",
+            "business_category": "Real Estate Law",
+            "sponsor_url": "https://example.com/eastside-legal"
+          },
+          {
+            "sponsor_id": "SPON-01",
+            "name": "Northwood Mortgage Group",
+            "business_category": "Mortgage Services",
+            "sponsor_url": "https://example.com/northwood-mortgage"
+          }
+        ],
+        "source_note": "This listing is a fictional scenario and was not sourced from a real listing.",
+        "illustration_path": "/images/willow-house.svg",
+        "illustration_description": "An architectural vector illustration of Willow House Manor, styled as a conceptual drawing rather than a photograph."
+      },
+      {
+        "property_id": "PROP-104",
+        "property_name": "Maple Court Townhome",
+        "address": {
+          "street": "150 Maple Way",
+          "city": "Northwood",
+          "state": "ZZ",
+          "zip_code": "01235"
+        },
+        "price": 2500,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "square_feet": 1600,
+        "amenities": [
+          "Hardwood Floors",
+          "Central AC",
+          "In-Unit Laundry"
+        ],
+        "local_sponsors": [
+          {
+            "sponsor_id": "SPON-04",
+            "name": "Apex Home Insurance",
+            "business_category": "Home Insurance",
+            "sponsor_url": "https://example.com/apex-insurance"
+          }
+        ],
+        "source_note": "This listing is a fictional scenario and was not sourced from a real listing.",
+        "illustration_path": "/images/maple-court.svg",
+        "illustration_description": "An artistic illustration representing the Maple Court Townhome, shown as an illustration instead of a photograph."
+      },
+      {
+        "property_id": "PROP-105",
+        "property_name": "Cedar Studio Flat",
+        "address": {
+          "street": "250 Cedar Boulevard",
+          "city": "Westend",
+          "state": "ZZ",
+          "zip_code": "56790"
+        },
+        "price": 1800,
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "square_feet": 820,
+        "amenities": [
+          "Dishwasher",
+          "Balcony"
+        ],
+        "local_sponsors": [
+          {
+            "sponsor_id": "SPON-02",
+            "name": "Westend Interior Styling",
+            "business_category": "Interior Design",
+            "sponsor_url": "https://example.com/westend-interiors"
+          }
+        ],
+        "source_note": "This listing is a fictional scenario and was not sourced from a real listing.",
+        "illustration_path": "/images/cedar-studio.svg",
+        "illustration_description": "A digital illustration of the Cedar Studio Flat, intended as a graphic representation rather than a photo."
+      }
+    ]
+  }
+]

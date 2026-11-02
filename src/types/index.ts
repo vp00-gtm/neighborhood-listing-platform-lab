@@ -1,20 +1,9 @@
-export interface Property {
-  id: string;
-  title: string;
-  streetAddress: string;
-  city: string;
-  monthlyRentUsd: number;
-  bedrooms: number;
-  bathrooms: number;
-  imagePath: string;
-  imageAlt: string;
-}
+import type {
+  Property,
+  Sponsor,
+} from "@/types/property-schema.generated";
 
-export interface Sponsor {
-  id: string;
-  businessName: string;
-  websiteUrl: string;
-}
+export type { Property, Sponsor };
 
 export interface PropertyCardProps {
   property: Property;

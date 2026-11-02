@@ -19,12 +19,15 @@ export default function PropertyExplorer({
     maxRentUsd: number | undefined;
   }>({ city: "", maxRentUsd: undefined });
 
-  const cities = [...new Set(properties.map((property) => property.city))].sort();
+  const cities = [
+    ...new Set(properties.map((property) => property.address.city)),
+  ].sort();
   const filteredProperties = properties.filter(
     (property) =>
-      (appliedFilters.city === "" || property.city === appliedFilters.city) &&
+      (appliedFilters.city === "" ||
+        property.address.city === appliedFilters.city) &&
       (appliedFilters.maxRentUsd === undefined ||
-        property.monthlyRentUsd <= appliedFilters.maxRentUsd),
+        property.price <= appliedFilters.maxRentUsd),
   );
 
   function applyFilters() {
@@ -51,7 +54,7 @@ export default function PropertyExplorer({
       {filteredProperties.length > 0 ? (
         <div className="mt-6 grid min-w-0 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {filteredProperties.map((property) => (
-            <PropertyCard key={property.id} property={property} />
+            <PropertyCard key={property.property_id} property={property} />
           ))}
         </div>
       ) : (
